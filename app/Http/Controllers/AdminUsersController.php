@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class adminUsersController extends Controller
+class AdminUsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -39,8 +39,7 @@ class adminUsersController extends Controller
     public function store(Request $request)
     {
         //
-       // return view('admin.users.store');
-          $request->all();
+        return $request->all();
     }
 
     /**
@@ -52,7 +51,6 @@ class adminUsersController extends Controller
     public function show($id)
     {
         //
-        return view('admin.users.show');
     }
 
     /**
