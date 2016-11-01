@@ -3,10 +3,25 @@
 @section('content')
 
 
-    <h1>Create Users table</h1>
-  <p>jsdsggggsjhdjsd</p>
+    <h1>Create Users</h1>
+    {!! Form::open(['method'=>'POST']) !!}
 
-    <input type="text" name="name">
+    <div class="form-group">
+        {!! Form::label('title:','Name')  !!}
+        {!! Form::text('title',null,['class'=>'form-control']) !!}
+    </div>
+
+    {!! Form::close()!!}
+
+
+
+
+    <form  method="post" action='AdminUsersController@store'>
+        <input class="" type="text" name="title">
+        <label>Name</label>
+
+    </form>
+
 
 
 @endsection
