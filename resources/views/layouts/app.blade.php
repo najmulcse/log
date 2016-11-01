@@ -35,7 +35,9 @@
    @include('layouts.sidebar')
 
                 <!-- body -->
-    @yield('content')
+
+
+  @yield('content')
 
 
            <!-- end row -->
