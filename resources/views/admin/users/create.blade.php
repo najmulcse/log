@@ -3,17 +3,10 @@
 @section('content')
 
 
-    <h1>Create Users</h1>
-    {!! Form::open(['method'=>'POST','action'=>'adminUsersController@store']) !!}
+    <h1>Create Users table</h1>
+  <p>jsdsggggsjhdjsd</p>
 
-    <div class="form-group">
-        {!! Form::label('title:','Name')  !!}
-        {!! Form::text('title',null,['class'=>'form-control']) !!}
-    </div>
-
-    {!! Form::close()!!}
-
-
+    <input type="text" name="name">
 
 
 @endsection
