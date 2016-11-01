@@ -16,6 +16,7 @@ class adminUsersController extends Controller
     public function index()
     {
         //
+        return view('admin.users.index');
     }
 
     /**
@@ -26,6 +27,7 @@ class adminUsersController extends Controller
     public function create()
     {
         //
+        return view('admin.users.create');
     }
 
     /**
@@ -37,6 +39,8 @@ class adminUsersController extends Controller
     public function store(Request $request)
     {
         //
+       // return view('admin.users.store');
+          $request->all();
     }
 
     /**
@@ -48,6 +52,7 @@ class adminUsersController extends Controller
     public function show($id)
     {
         //
+        return view('admin.users.show');
     }
 
     /**

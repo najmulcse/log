@@ -26,30 +26,30 @@
 <div id="wrapper">
 
     <!-- Navigation -->
-   @include('layouts.navigation')
+@include('layouts.navigation')
 
 
 
 
-                    <!--Sidebar -->
-   @include('layouts.sidebar')
+<!--Sidebar -->
+@include('layouts.sidebar')
 
-                <!-- body -->
-    @yield('content')
+<!-- body -->
 
 
-           <!-- end row -->
 
-         <!-- /#page-wrapper -->
-<!-- /#wrapper -->
+<!-- end row -->
 
-<!-- jQuery -->
-<script src="{{asset('js/libs.js')}}"></script>
+    <!-- /#page-wrapper -->
+    <!-- /#wrapper -->
 
-<!-- Bootstrap Core JavaScript -->
-<!--<script src="js/bootstrap.min.js"></script>-->
+    <!-- jQuery -->
+    <script src="{{asset('js/libs.js')}}"></script>
 
-<!-- Morris Charts JavaScript -->
+    <!-- Bootstrap Core JavaScript -->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+    <!-- Morris Charts JavaScript -->
 {{--<script src="js/plugins/morris/raphael.min.js"></script>--}}
 {{--<script src="js/plugins/morris/morris.min.js"></script>--}}
 {{--<script src="js/plugins/morris/morris-data.js"></script>--}}
