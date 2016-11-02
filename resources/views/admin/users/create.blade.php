@@ -20,13 +20,13 @@
 
 
                      <div class="form-group ">
-                         {!! Form::label('status','Status') !!}
-                         {!! Form::select('status',array(1=>'Active' ,0=>'Not active'),0,['class'=>'form-control']) !!}
+                         {!! Form::label('is_active','Status') !!}
+                         {!! Form::select('is_active',array(1=>'Active' ,0=>'Not active'),0,['class'=>'form-control']) !!}
                      </div>
 
                      <div class="form-group ">
                          {!! Form::label('role_id','Role') !!}
-                         {!! Form::select('role_id',[''=>'Choose Options'],null,['class'=>'form-control']) !!}
+                         {!! Form::select('role_id',[''=>'Choose Options']+$roles,null,['class'=>'form-control']) !!}
                      </div>
 
                      <div class="form-group ">
@@ -37,9 +37,26 @@
                      </div>
                     {!! Form::close()!!}
              </div>
+
+
             <div class="col-md-3"></div>
 
      </div>
+     @if(count($errors) > 0)
+
+         <div class="alert alert-danger">
+
+             <ul>
+
+                 @foreach($errors->all() as $error)
+
+                     <li>{{$error}}</li>
+                 @endforeach
+             </ul>
+
+         </div>
+
+     @endif
 
 
 
