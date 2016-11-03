@@ -30,6 +30,7 @@ class UserRequest extends Request
             'role_id'=>'required',
             'is_active'=>'required',
             'password'=>'required',
+            'photo_id'=>'required',
         ];
     }
 }
