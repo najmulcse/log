@@ -55,19 +55,14 @@ class AdminUsersController extends Controller
 
         }
 
-
         $input['password']=bcrypt($request->password);
-        //User::create($input)->all();
-        foreach ($input as $in)
-        {
-            echo $in ." <br>";
-        }
+        User::create($input);
 
 
-      //return redirect('admin/users');
+      return redirect('admin/users');
 
         //
-      User::create($request->all());
+     // User::create($request->all());
 //
 //        return redirect('admin/users');
        // return $request->all();
