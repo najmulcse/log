@@ -15,7 +15,7 @@
                     </div>
                     <div class="form-group ">
                         {!! Form::label('email','Email') !!}
-                        {!! Form::text('email',null,['class'=>'form-control']) !!}
+                        {!! Form::email('email',null,['class'=>'form-control']) !!}
                     </div>
 
 
@@ -30,9 +30,10 @@
                      </div>
 
                     <div class="form-group">
-                        {!! Form::label('photo_id','Photo') !!}
-                        {!! Form::file('photo_id',null,['class'=>'form-control']) !!}
+                        {!! Form::label('Photo_ID_NO','Photo') !!}
+                        {!! Form::file('Photo_ID_NO',null,['class'=>'form-control']) !!}
                     </div>
+
                      <div class="form-group ">
                          <div class="form-group ">
                              {!! Form::label('Password','Password') !!}
