@@ -4,12 +4,12 @@
 @section('content')
 
     <div class="row">
-            <h1>Edit User</h1>
+
 
             <div class="col-md-8">
-
+                <h1>Edit User</h1>
                 <div class="col-sm-9">
-                        {!! Form::model($user,['method'=>'PATCH','action'=>['AdminUsersController@update',$user->id ],'files'=>'true']) !!}
+                        {!! Form::model($user,['method'=>'PATCH','action'=>['AdminUsersController@update',$user->id],'files'=>'true']) !!}
 
                         <div class="form-group ">
                             {!! Form::label('name:','Name')  !!}
@@ -41,9 +41,17 @@
                                 {!! Form::label('Password','Password') !!}
                                 {!! Form::password('password',['class'=>'form-control']) !!}
                             </div>
-                            {!! Form::submit('Update',['class'=>'btn btn-primary']) !!}
+                            {!! Form::submit('Update',['class'=>'btn btn-primary col-md-6']) !!}
                         </div>
                        {!! Form::close()!!}
+
+
+                        {!! Form::open(['method'=>'DELETE','action'=> ['AdminUsersController@destroy',$user->id]]) !!}
+
+                        <div class="form-group">
+                            {!!Form::submit('Delete',['class'=>'btn btn-danger col-md-6'])!!}
+                        </div>
+                        {!! Form::close() !!}
 
                  </div>
 
@@ -52,7 +60,7 @@
 
 
             <div class="col-md-3">
-                <img  class="img-responsive img-rounded" src="/images/{{$user->image ? $user->image->file : '/images/color.PNG'}}" alt="Not available" >
+                <img  class="img-responsive img-rounded" src="/images/{{$user->image ? $user->image->file : 'http://placehold.it/350x150'}}" alt="Not available" >
             </div>
             <div class="col-md-1">
 

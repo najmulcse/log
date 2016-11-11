@@ -29,14 +29,14 @@
 @include('layouts.navigation')
 
 
-
+<div class="row">
 
 <!--Sidebar -->
 @include('layouts.sidebar')
 
 <!-- body -->
 
-
+</div>
 
 <!-- end row -->
 

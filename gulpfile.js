@@ -28,6 +28,7 @@ elixir(function(mix) {
                 'bootstrap.js',
                 'bootstrap.min.js',
                 'jquery.js'
+
         ],'./public/js/libs.js')
 
 

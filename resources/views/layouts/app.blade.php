@@ -23,21 +23,24 @@
 
 <body>
 
-<div id="wrapper">
+
 
     <!-- Navigation -->
-   @include('layouts.navigation')
+  @include('layouts.navigation')
 
 
+    <div class="row">
+    @include('layouts.sidebar')
 
+    <!-- body -->
+
+     <div class="col-md-10">
+        @yield('content')
+     </div>
+    </div>
 
                     <!--Sidebar -->
-   @include('layouts.sidebar')
 
-                <!-- body -->
-
-
-  @yield('content')
 
 
            <!-- end row -->

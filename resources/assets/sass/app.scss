@@ -1,5 +1,147 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-.nav-choice{
-  background-color: #222;
+
+
+
+/*-------------------------------*/
+/*     Sidebar nav styles        */
+/*-------------------------------*/
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width:220px;
+  li {
+    display: inline-block;
+    line-height: 20px;
+    position: relative;
+    width: 100%;
+    &:before {
+      background-color: #1a1a1a;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transition: width .2s ease-in;
+      width: 3px;
+      z-index: -1;
+      color:white;
+    }
+    &:first-child {
+      a {
+        background-color: #1a1a1a;
+        color: #ffffff;
+      }
+    }
+    &:nth-child(2) {
+      &:before {
+        background-color: #1a1a1a;
+      }
+    }
+    &:nth-child(3) {
+      &:before {
+        background-color: #1a1a1a;
+      }
+    }
+    &:nth-child(4) {
+      &:before {
+        background-color: #1a1a1a;
+      }
+    }
+    &:nth-child(5) {
+      &:before {
+        background-color: #1a1a1a;
+      }
+    }
+    &:nth-child(6) {
+      &:before {
+        background-color: #1a1a1a;
+      }
+    }
+    &:nth-child(7) {
+      &:before {
+        background-color: #1a1a1a;
+      }
+    }
+    &:nth-child(8) {
+      &:before {
+        background-color: #1a1a1a;
+      }
+    }
+    &:nth-child(9) {
+      &:before {
+        background-color: #1a1a1a;
+      }
+    }
+    &:hover {
+      &:before {
+        transition: width .2s ease-in;
+        width: 100%;
+      }
+    }
+    a {
+      color: #dddddd;
+      display: block;
+      padding: 10px 15px 10px 30px;
+      text-decoration: none;
+    }
+  }
+  li.open {
+    &:hover {
+      before {
+        transition: width .2s ease-in;
+        width: 100%;
+      }
+    }
+  }
+  .dropdown-menu {
+    background-color: #222222;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
 }
+.sidebar-nav li a:hover, .sidebar-nav li a:active, .sidebar-nav li a:focus, .sidebar-nav li.open a:hover, .sidebar-nav li.open a:active, .sidebar-nav li.open a:focus {
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+}
+.sidebar-nav>.sidebar-brand {
+  font-size: 20px;
+  height: 65px;
+  line-height: 44px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
